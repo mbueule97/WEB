@@ -1,0 +1,269 @@
+@font-face {
+  font-family: poppins;
+  src: url("/fonts/poppins/Poppins-Regular.ttf");
+}
+:root {
+  --dark-pink: #ba4270;
+  --water-white: #fbfcfe;
+
+  --Blue-color: #36536b;
+  --dark-blue: #1b262f;
+  --light-pink: #da6d97;
+
+  --light-Gray: #6c8294;
+  --light-blue: #5a8ef0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/*=================Classes reutilizables================*/
+.btn {
+  outline: none;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  padding: 0.8rem 1.5rem;
+  font-family: inherit;
+  font-size: 1rem;
+}
+.primaryBtn {
+  background-color: var(--light-blue);
+  color: var(--water-white);
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.lead {
+  font-size: 1.1rem;
+  color: var(--water-white);
+  line-height: 1.5rem;
+}
+
+body {
+  font-family: "poppins", sans-serif;
+  background-color: #edf3f8;
+}
+
+/*=================Navbar================*/
+header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+header .navbar ul {
+  display: flex;
+  list-style-type: none;
+}
+header .navbar ul li {
+  margin: 0 1rem;
+}
+
+header .navbar ul li a {
+  color: var(--Blue-color);
+  font-size: 1.1rem;
+}
+
+/*=================swocase================*/
+
+header {
+  position: relative;
+  overflow: hidden;
+}
+
+.showcase_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.showcase_wrapper .txtcontent h2 {
+  font-size: 3rem;
+  color: var(--dark-blue);
+}
+.showcase_wrapper .circle_img img {
+  object-fit: cover;
+  width: 100%;
+}
+.showcase_wrapper .circle_img {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  transform: translate(172%, 10%);
+}
+
+/*=================¿QUE OFRECEMOS?================*/
+
+#what_wedo {
+  background-color: var(--dark-blue);
+  padding: 8rem 0;
+  margin: 6rem 0;
+  position: relative;
+  overflow: hidden;
+}
+.wedo_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+.wedo_wrapper .txtcontent h2 {
+  color: var(--water-white);
+  margin: 1rem 0;
+  font-size: 2.5rem;
+}
+.wedo_wrapper .txtcontent p {
+  line-height: 1.5;
+  color: var(--water-white);
+}
+
+.wedo_wrapper .txtcontent button {
+  margin: 2rem 0;
+  font-family: inherit;
+  margin: 2rem 0;
+  background-color: transparent;
+  border: 1px solid #edf3f8;
+  color: var(--water-white);
+}
+.techlogos .imgs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.techlogos .imgs img {
+  object-fit: cover;
+  margin: 2rem 3rem;
+}
+
+.wedo_wrapper .circle_img {
+  position: absolute;
+  top: 0;
+  transform: translate(-40%, -20%);
+  z-index: 1;
+}
+
+/*=================footer================*/
+
+footer {
+  background-color: var(--dark-blue);
+}
+footer .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+footer .navbar ul {
+  display: flex;
+  list-style-type: none;
+}
+footer .navbar ul li {
+  margin: 0 1rem;
+}
+
+footer .navbar ul li a {
+  color: var(--water-white);
+  font-size: 1.1rem;
+}
+footer .social_icons img {
+  margin: 0 1rem;
+}
+
+/*=================Cards================*/
+
+#card {
+  margin: 3rem 0;
+}
+.card_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  gap: 3rem;
+}
+.card .card_body {
+  color: var(--Blue-color);
+  margin: 1rem 0;
+}
+
+/*=====================================*/
+/*===============Service Page================*/
+/*=====================================*/
+
+#header {
+  position: relative;
+}
+#header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+#header .navbar ul {
+  display: flex;
+  list-style-type: none;
+}
+#header .navbar ul li {
+  margin: 0 1rem;
+}
+
+#header .navbar ul li a {
+  color: var(--Blue-color);
+  font-size: 1.1rem;
+}
+
+/*===========================================*/
+/*===============Contact page================*/
+/*==========================================*/
+
+#contact_form {
+  margin: 4rem 0;
+}
+.contact_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+}
+.contact_wrapper form input,
+textarea {
+  outline: none;
+  border: none;
+  width: 100%;
+  font-family: inherit;
+  padding: 0.75rem 1rem;
+  background-color: transparent;
+  font-size: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+.contact_wrapper button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  border: 1px solid var(--Blue-color);
+  background: 20px;
+  padding: 0.75rem 2rem;
+  margin: 2rem 0;
+  font-family: inherit;
+  cursor: pointer;
+}
+.contact_wrapper .content h2 {
+  margin: 2rem 0;
+  font-size: 2rem;
+}
+.content .techlogos{
+  background-color: var(--dark-blue);
+  border-radius: 10px;
+}
